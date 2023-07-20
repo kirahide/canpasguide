@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+	 <meta charset="utf-8">
+	 <link rel="stylesheet"type="text/css"href="style.css">
+	 <title>システム開発A_最終課題</title>
+	</head>
+	<body>
+	 <div id="site">
+	 <header><p id="title01">～東海大学ガイドタウン～</p></header>
+	  <section>
+	   <p id="menu01">検索欄</p>
+	    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="検索">
+		<ul id="myUL">
+		  <li><a href="syounann.html" target="_blank">湘南</a></li>
+		  <li><a href="sibuya.html" target="_blank">渋谷</a></li>
+		  <li><a href="isehara.html" target="_blank">伊勢原</a></li>
+		</ul>	    
+		<script>
+		 function myFunction() {
+		  // Declare variables
+		  var input, filter, ul, li, a, i, txtValue;
+		  input = document.getElementById('myInput');
+		  filter = input.value.toUpperCase();
+		  ul = document.getElementById("myUL");
+		  li = ul.getElementsByTagName('li');
+
+		  // Loop through all list items, and hide those who don't match the search query
+		  for (i = 0; i < li.length; i++) {
+		    a = li[i].getElementsByTagName("a")[0];
+		    txtValue = a.textContent || a.innerText;
+		    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+		      li[i].style.display = "";
+		    } else {
+		      li[i].style.display = "none";
+			   }
+			}
+		}
+	</script>
+	     <h3>・東海大学の3つのキャンパスについて案内するサイトです。</h3><br>
+	     <p>・上の検索欄でキャンパス名のついたボタンをクリックするか検索バーで検索できます。</p>
+	   </section>
+	    <footer><p id="menu01">制作　0CES2103_吉良秀徳</p></footer>
+	 </div>
+	</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+	 <meta charset="utf-8">
+	 <link rel="stylesheet"type="text/css"href="style.css">
+	 <title>システム開発A_最終課題</title>
+	</head>
+	<body>
+	 <div id="site">
+	 <header><p id="title01">～東海大学ガイドタウン(湘南編)～</p></header>
+	  <nav>
+	   <p id="menu01">＜公式HP＞</p>
+	    <p id="menu01"><a href="https://www.u-tokai.ac.jp/about/campus/campus-shonan/" target="_blank">湘南</a></p>
+	  </nav>
+	   <section>
+	    <p></p>
+	    <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+		src="https://www.google.com/maps/embed/v1/place?q=tokai%20university%20in%20shonan&key=AIzaSyBdhU0Sfy9C1Zp-xCQxQYZ-wxP7gO10F5Q">
+	　　</iframe>
+	   </section>
+	    <footer><p>理工系から情報系、社会・人文科学、そしてスポーツまで、文理融合型総合大学ならではの多様な11学部、大学院が併設された湘南キャンパス。
+				   起伏に富む丘陵地のロケーションをそのまま活かした広大で緑濃い校地は、大学というよりも自然環境に恵まれた公園都市のイメージ。
+				   多種多彩な学生が“共生”する、自慢のキャンパスです。</p></footer>
+	 </div>
+	</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+	 <meta charset="utf-8">
+	 <link rel="stylesheet"type="text/css"href="style.css">
+	 <title>システム開発A_最終課題</title>
+	</head>
+	<body>
+	 <div id="site">
+	 <header><p id="title01">～東海大学ガイドタウン(渋谷編)～</p></header>
+	  <nav>
+	   <p id="menu01">＜公式HP＞</p>
+	    <p id="menu01"><a href="https://www.u-tokai.ac.jp/about/campus/campus-shibuya/" target="_blank">渋谷</a></p>
+	  </nav>
+	   <section>
+	    <p></p>
+	    <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+	     <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJZbO2-U7zGGARRG0_pDkhYPQ&key=AIzaSyBdhU0Sfy9C1Zp-xCQxQYZ-wxP7gO10F5Q"></iframe>
+	    </iframe>
+	   </section>
+	    <footer><p>日本近代建築の先駆けといわれる建築家・故山田守氏によって設計され、50年以上の歴史を誇る渋谷キャンパス。都心からほど近くに位置する利便性の高い都心型キャンパスでありながら、閑静な住宅街をホームタウンとし学業に専念できる理想的な立地条件を備えている点も大きな特徴のひとつです。</p></footer>
+	 </div>
+	</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+	 <meta charset="utf-8">
+	 <link rel="stylesheet"type="text/css"href="style.css">
+	 <title>システム開発A_最終課題</title>
+	</head>
+	<body>
+	 <div id="site">
+	 <header><p id="title01">～東海大学ガイドタウン(伊勢原編)～</p></header>
+	  <nav>
+	   <p id="menu01">＜公式HP＞</p>
+	    <p id="menu01"><a href="https://www.u-tokai.ac.jp/about/campus/campus-isehara/" target="_blank">伊勢原</a></p>
+	  </nav>
+	   <section>
+	    <p></p>
+	    <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=Tokai%20University%20Isehara%20Campus%2C%20%EF%BC%91%EF%BC%94%EF%BC%93%20%E4%B8%8B%E7%B3%9F%E5%B1%8B%20%E4%BC%8A%E5%8B%A2%E5%8E%9F%E5%B8%82%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%20%E6%97%A5%E6%9C%AC&key=AIzaSyBdhU0Sfy9C1Zp-xCQxQYZ-wxP7gO10F5Q"></iframe>
+	   </section>
+	    <footer><p>医学部医学科・看護学科は、神奈川県中西部の伊勢原市にキャンパスを構え、医学部付属病院と学部棟が同じ敷地に設置されています。
+			日々、最先端の医療現場と患者さんの姿を目の当たりにし、将来、医療・福祉に関わるスペシャリストを養成していく上で理想的な“現場密着型キャンパス”です。</p></footer>
+	 </div>
+	</body>
+</html>
+
+
+@charset"utf-8";
+
+#title01{
+	line-height:0px;
+	text-align:center;
+	font-size:40px;
+	font-family:serif;
+	}
+#menu01{
+	text-align:center;
+	}
+#contents01{
+	padding:10px;
+	}
+
+
+body{
+	background-color:blue;
+}
+header,nav,section,footer{
+	border:1px solid #999999;
+	border-radius:8px;
+	padding:10px 10px 10px 10px;
+	background:#ffffff;
+}
+#site{
+	margin:20px auto;
+	width:800px;height:600px;
+}
+header{
+	margin:0px 0px 0px 0px;
+	height:80px;width:778px;
+}
+nav{
+	margin:10px 0px 10px 0px;
+	float:left;
+	height:380px;width:120px;
+}
+section{
+	margin:10px 0px 10px 0px;
+	float:right;
+	height:460px;width:620px;
+}
+footer{
+	margin:0px 0px 0px 0px;
+	clear:both;
+	height:100px;width:778px;
+}
+#myInput {
+
+  background-position: 10px 12px;
+  background-repeat: 
+  width:20px; 
+  font-size: 16px; 
+  padding: 12px 10px 12px 10px; 
+  border: 1px solid #ddd; 
+  margin-bottom: 12px; 
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ul#myUL li {
+    padding: 0;
+}
+#myUL li a {
+  border: 1px solid #ddd; 
+  margin-top: -1px; 
+  background-color: #f6f6f6; 
+  padding: 12px; 
+  text-decoration: none; 
+  font-size: 18px;
+  color: black; 
+  display: block; 
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #c8e4ff;
+}
